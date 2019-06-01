@@ -8,7 +8,7 @@ const Navigation = ({ apps, modifier }) => (
   <nav className={`navigation navigation--${modifier}`}>
     <ServerControl />
     <div className="navigation__app-control">
-      <strong>Available Apps</strong>
+      <strong className="navigation__title">Available Apps</strong>
       <AppControl items={apps} />
     </div>
   </nav>

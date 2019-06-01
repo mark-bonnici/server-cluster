@@ -5,6 +5,7 @@ $redRobin: #7a3222;
 $gallery: #ececec;
 $alabaster: #f7f7f7;
 $mineShaft: #1c1c1c;
+$coal: #141414;
 
 $purpleGradient: linear-gradient(
   90deg,
@@ -39,13 +40,10 @@ $pageBackgroundColor: $black;
 $serverControlButtonColor: $alabaster;
 
 $buttonColor: $alabaster;
-$buttonTextColor: $white;
-$buttonBorderColor: $outrageousOrange;
-$buttonBackgroundColor: $outrageousOrange;
-
-$buttonTextHoverColor: $outrageousOrange;
-$buttonBorderHoverColor: $white;
-$buttonBackgroundHoverColor: $white;
+$navTitleColor: $white;
+$navTextColor: $outrageousOrange;
+$navItemBackgroundColor: $coal;
+$navItemBorderColor: $outrageousOrange;
 
 $MenuColor: $alabaster;
 $MenuBackgroundColor: $mineShaft;
