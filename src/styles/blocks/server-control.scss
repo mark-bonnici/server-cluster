@@ -1,10 +1,23 @@
+@import "../helpers/variables";
+
 .server-control {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin: 30px;
+  color: $serverControlButtonColor;
 
   div {
     flex: 0 1 auto;
-    margin: 0 auto;
+    margin: 10px auto;
+  }
+
+  &__label {
+    position: relative;
+    font-size: 0.9rem;
+
+    &--remove {
+      opacity: 0.3;
+    }
   }
 }
