@@ -3,7 +3,7 @@ const initialState = [
     id: 1,
     initials: "Hd",
     appName: "Hadoop",
-    color: "magenta",
+    color: "pink",
     timeAdded: "Added 32min ago"
   },
   {
@@ -31,7 +31,7 @@ const initialState = [
     id: 11,
     initials: "Sp",
     appName: "Spark",
-    color: "Green",
+    color: "green",
     timeAdded: "Added 21min ago"
   },
   { id: 12 },

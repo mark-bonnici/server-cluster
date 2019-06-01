@@ -2,15 +2,13 @@ import React from "react"
 import * as PropTypes from "prop-types"
 
 const Card = ({ initials, appName, color, timeAdded, onClick }) => (
-  <div className="card" onClick={onClick}>
-    <div className="card__thumbnail-link">
-      <div className={`card__thumbnail ${color}`}>
-        <div className="card__info">
-          <h3 className="card__title">{initials}</h3>
-          <p>{appName}</p>
-          <i>{timeAdded}</i>
-        </div>
-      </div>
+  <div className={`card card--${color}`} onClick={onClick}>
+    <div className="card__info">
+      <h3 className="card__title">{initials}</h3>
+      <p className="card__name">
+        <strong>{appName}</strong>
+      </p>
+      <p className="card__date">{timeAdded}</p>
     </div>
   </div>
 )

@@ -1,9 +1,12 @@
 import React from "react"
 import * as PropTypes from "prop-types"
+
+import { TITLE } from "../helpers/constants"
 import Card from "./Card"
 
 const ServerList = ({ servers }) => (
   <div className="server-list">
+    <h1>{TITLE}</h1>
     <div className="page__inner server-list__inner">
       {servers.map(({ initials, appName, color, timeAdded }, index) => {
         const card = {

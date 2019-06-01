@@ -1,12 +1,41 @@
 $white: #ffffff;
+$black: #000;
 $outrageousOrange: #fd5c3c;
 $redRobin: #7a3222;
 $gallery: #ececec;
 $alabaster: #f7f7f7;
-$mineShaft: #272727;
+$mineShaft: #1c1c1c;
 
-$textColor: $mineShaft;
-$pageBackgroundColor: $alabaster;
+$purpleGradient: linear-gradient(
+  90deg,
+  rgba(217, 121, 139, 1) 0%,
+  rgba(111, 56, 122, 1) 100%
+);
+$greenGradient: linear-gradient(
+  90deg,
+  rgba(178, 235, 107, 1) 0%,
+  rgba(97, 157, 83, 1) 100%
+);
+$cyanGradient: linear-gradient(
+  90deg,
+  rgba(160, 219, 199, 1) 0%,
+  rgba(34, 187, 178, 1) 100%
+);
+$pinkGradient: linear-gradient(
+  90deg,
+  rgba(227, 49, 217, 1) 0%,
+  rgba(187, 34, 91, 1) 100%
+);
+$blueGradient: linear-gradient(
+  90deg,
+  rgba(0, 212, 255, 1) 0%,
+  rgba(9, 75, 121, 1) 100%
+);
+
+$textColor: $alabaster;
+$titleColor: $white;
+
+$pageBackgroundColor: $black;
 
 $buttonTextColor: $white;
 $buttonBorderColor: $outrageousOrange;
@@ -16,12 +45,7 @@ $buttonTextHoverColor: $outrageousOrange;
 $buttonBorderHoverColor: $white;
 $buttonBackgroundHoverColor: $white;
 
-$burgerMenuColor: $white;
-$burgerMenuStickyColor: $redRobin;
-
-$gameBorderColor: $outrageousOrange;
-
-$footerColor: $white;
-$footerBackgroundColor: $mineShaft;
+$MenuColor: $alabaster;
+$MenuBackgroundColor: $mineShaft;
 
 $titleFont: RobotoExtraBlack, sans-serif;

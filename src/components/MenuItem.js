@@ -4,7 +4,7 @@ import * as PropTypes from "prop-types"
 
 const BUTTON_MODIFIER = "round-button--small"
 
-const MenuItem = ({ text }) => (
+const MenuItem = ({ text, modifier }) => (
   <div className="menu-item">
     <span>{text}</span>
     <div className="menu-item__button-container">
