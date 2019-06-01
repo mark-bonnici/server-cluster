@@ -20,7 +20,7 @@ const mapStateToProps = ({ servers }) => ({
 const mapDispatchToProps = () => ({})
 
 Home.propTypes = {
-  servers: PropTypes.objectOf(PropTypes.any).isRequired
+  servers: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default connect(

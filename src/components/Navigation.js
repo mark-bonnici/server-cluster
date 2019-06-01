@@ -2,16 +2,22 @@ import React from "react"
 import * as PropTypes from "prop-types"
 import ServerControl from "./ServerControl"
 import AppControl from "./AppControl"
+import { connect } from "react-redux"
 
-const Navigation = ({ list, modifier }) => (
+const Navigation = ({ apps, modifier }) => (
   <nav className={`navigation navigation--${modifier}`}>
     <ServerControl />
     <div className="navigation__app-control">
       <strong>Available Apps</strong>
-      <AppControl items={list} />
+      <AppControl items={apps} />
     </div>
   </nav>
 )
+const mapStateToProps = ({ apps }) => ({
+  apps: apps
+})
+
+const mapDispatchToProps = () => ({})
 
 Navigation.propTypes = {
   list: PropTypes.arrayOf(PropTypes.any).isRequired,
@@ -19,7 +25,11 @@ Navigation.propTypes = {
 }
 
 Navigation.defaultProps = {
-  modifier: ""
+  modifier: "",
+  list: []
 }
 
-export default Navigation
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Navigation)

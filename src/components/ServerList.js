@@ -5,7 +5,7 @@ import Card from "./Card"
 const ServerList = ({ servers }) => (
   <div className="server-list">
     <div className="page__inner server-list__inner">
-      {servers.map(({ initials, appName, color, timeAdded }) => {
+      {servers.map(({ initials, appName, color, timeAdded }, index) => {
         const card = {
           initials: initials,
           appName: appName,
@@ -13,7 +13,7 @@ const ServerList = ({ servers }) => (
           timeAdded: timeAdded
         }
 
-        return <Card {...card} key={appName} />
+        return <Card {...card} key={index} />
       })}
     </div>
   </div>

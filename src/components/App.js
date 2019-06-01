@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import * as PropTypes from "prop-types"
-import Home from "../pages/Home"
+import Home from "../containers/Home"
 import Navigation from "./Navigation"
 
 class App extends Component {
@@ -9,7 +8,7 @@ class App extends Component {
 
     return (
       <div className="page">
-        {/* <Navigation list="" modifier={navigationModifier} /> */}
+        <Navigation modifier={navigationModifier} />
         <Home />
       </div>
     )
