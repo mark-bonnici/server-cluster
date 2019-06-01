@@ -1,0 +1,56 @@
+@import "../helpers/variables";
+@import "../helpers/mixins.scss";
+@font-face {
+  font-family: RobotoExtraBlack;
+  src: url("../../assets/fonts/Roboto/Roboto-ExtraBlack.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  background: $pageBackgroundColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-centered {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.centered {
+  text-align: center;
+}
+
+.vertical-indent {
+  margin: 30px 0;
+}
