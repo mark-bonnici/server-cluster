@@ -4,12 +4,8 @@ import * as PropTypes from "prop-types"
 
 const AppControl = ({ items }) => (
   <ul className="app-control__items">
-    {items.map(({ pageTitle }, index) => {
-      const _index = "app-" + index
-
-      return (
-        <MenuItem key={_index} modifier="menu-item--blue" text={pageTitle} />
-      )
+    {items.map(({ appName, color }, index) => {
+      return <MenuItem key={index} modifier={color} text={appName} />
     })}
   </ul>
 )

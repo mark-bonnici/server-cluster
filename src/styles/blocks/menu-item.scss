@@ -1,0 +1,52 @@
+@import "../helpers/variables";
+
+.menu-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  padding: 10px 26px;
+  background-color: $navItemBackgroundColor;
+  border-bottom: 2px solid $navItemBorderColor;
+
+  &__text {
+    flex: 1 1 auto;
+  }
+
+  &__button-container {
+    display: flex;
+    position: absolute;
+    right: -15px;
+
+    div:first-child {
+      padding-right: 10px;
+    }
+  }
+  &__border {
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-width: 2px;
+    border-style: solid;
+
+    &--blue {
+      border-image: $blueBorderGradient;
+    }
+    &--pink {
+      border-image: $pinkBorderGradient;
+    }
+    &--purple {
+      border-image: $purpleBorderGradient;
+    }
+    &--green {
+      border-image: $greenBorderGradient;
+    }
+    &--cyan {
+      border-image: $cyanBorderGradient;
+    }
+  }
+}

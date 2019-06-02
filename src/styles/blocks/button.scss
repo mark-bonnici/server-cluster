@@ -1,39 +1,80 @@
+@import "../helpers/variables";
+@import "../helpers/mixins.scss";
+
 .round-button {
   border: 2px solid lightgrey;
-  background-color: #fff;
+  background: transparent;
   font-size: 16px;
   height: 2.5em;
   width: 2.5em;
   border-radius: 999px;
   position: relative;
   cursor: pointer;
+  color: $buttonColor;
 
   &:after,
   &:before {
     content: "";
     display: block;
-    background-color: grey;
+    background-color: $buttonColor;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-  &:before {
-    height: 1em;
-    width: 0.2em;
+  &--blue {
+    background: $blueGradient;
+  }
+  &--pink {
+    background: $pinkGradient;
+  }
+  &--purple {
+    background: $purpleGradient;
+  }
+  &--green {
+    background: $greenGradient;
+  }
+  &--cyan {
+    background: $cyanGradient;
   }
 
-  &:after {
-    height: 0.2em;
-    width: 1em;
+  &--pink,
+  &--blue,
+  &--green,
+  &--purple,
+  &--cyan {
+    border: 0px solid;
   }
-}
 
-.round-button--small {
-  font-size: 12px;
-}
+  &--add {
+    &:before {
+      height: 1em;
+      width: 0.2em;
+    }
 
-.round-button--large {
-  font-size: 22px;
+    &:after {
+      height: 0.2em;
+      width: 1em;
+    }
+  }
+
+  &--remove {
+    opacity: 0.3;
+    &:after {
+      height: 0.2em;
+      width: 1em;
+    }
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--large {
+    font-size: 22px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

@@ -1,27 +1,80 @@
 $white: #ffffff;
-$outrageousOrange: #fd5c3c;
-$redRobin: #7a3222;
+$black: #000;
 $gallery: #ececec;
 $alabaster: #f7f7f7;
-$mineShaft: #272727;
+$mineShaft: #1c1c1c;
+$coal: #141414;
 
-$textColor: $mineShaft;
-$pageBackgroundColor: $alabaster;
+$purpleGradient: linear-gradient(
+  90deg,
+  rgba(217, 121, 139, 1) 0%,
+  rgba(111, 56, 122, 1) 100%
+);
+$greenGradient: linear-gradient(
+  90deg,
+  rgba(178, 235, 107, 1) 0%,
+  rgba(97, 157, 83, 1) 100%
+);
+$cyanGradient: linear-gradient(
+  90deg,
+  rgba(160, 219, 199, 1) 0%,
+  rgba(34, 187, 178, 1) 100%
+);
+$pinkGradient: linear-gradient(
+  90deg,
+  rgba(227, 49, 217, 1) 0%,
+  rgba(187, 34, 91, 1) 100%
+);
+$blueGradient: linear-gradient(
+  90deg,
+  rgba(0, 212, 255, 1) 0%,
+  rgba(9, 75, 121, 1) 100%
+);
 
-$buttonTextColor: $white;
-$buttonBorderColor: $outrageousOrange;
-$buttonBackgroundColor: $outrageousOrange;
+$purpleBorderGradient: linear-gradient(
+    to top,
+    rgba(217, 121, 139, 1),
+    rgba(111, 56, 122, 1)
+  )
+  1 100%;
+$greenBorderGradient: linear-gradient(
+    to top,
+    rgba(178, 235, 107, 1),
+    rgba(97, 157, 83, 1)
+  )
+  1 100%;
+$cyanBorderGradient: linear-gradient(
+    to top,
+    rgba(160, 219, 199, 1),
+    rgba(34, 187, 178, 1)
+  )
+  1 100%;
+$pinkBorderGradient: linear-gradient(
+    to top,
+    rgba(227, 49, 217, 1),
+    rgba(187, 34, 91, 1)
+  )
+  1 100%;
+$blueBorderGradient: linear-gradient(
+    to top,
+    rgba(0, 212, 255, 1),
+    rgba(9, 75, 121, 1)
+  )
+  1 100%;
 
-$buttonTextHoverColor: $outrageousOrange;
-$buttonBorderHoverColor: $white;
-$buttonBackgroundHoverColor: $white;
+$textColor: $alabaster;
+$titleColor: $white;
 
-$burgerMenuColor: $white;
-$burgerMenuStickyColor: $redRobin;
+$pageBackgroundColor: $black;
+$serverControlButtonColor: $alabaster;
 
-$gameBorderColor: $outrageousOrange;
+$buttonColor: $alabaster;
+$navTitleColor: $white;
+$navTextColor: $alabaster;
+$navItemBackgroundColor: $coal;
+$navItemBorderColor: $mineShaft;
 
-$footerColor: $white;
-$footerBackgroundColor: $mineShaft;
+$MenuColor: $alabaster;
+$MenuBackgroundColor: $mineShaft;
 
 $titleFont: RobotoExtraBlack, sans-serif;
