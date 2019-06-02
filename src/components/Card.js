@@ -17,7 +17,7 @@ Card.propTypes = {
   initials: PropTypes.string,
   appName: PropTypes.string,
   color: PropTypes.string,
-  timeAdded: PropTypes.string
+  timeAdded: PropTypes.any
 }
 
 Card.defaultProps = {

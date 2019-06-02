@@ -14,7 +14,7 @@ const ServerControl = ({ addServer, removeServer }) => (
       <Button
         type="add"
         modifier={BUTTON_MODIFIER}
-        action={() => addServer(2)}
+        action={() => addServer()}
       />
       <label className="server-control__label">{ADD_BUTTON_TEXT}</label>
     </div>

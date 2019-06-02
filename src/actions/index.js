@@ -10,7 +10,16 @@ export const removeServer = () => ({
   id: serverIdCounter--
 })
 
-export const AvailableApps = {
-  CHRONOS: "CHRONOS",
-  SPARK: "SPARK"
-}
+export const addApp = (initials, appName, color) => ({
+  type: "ADD_APP",
+  initials: initials,
+  appName: appName,
+  color: color
+})
+
+export const removeApp = (initials, appName, color) => ({
+  type: "REMOVE_APP",
+  initials: initials,
+  appName: appName,
+  color: color
+})

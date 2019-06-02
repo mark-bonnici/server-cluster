@@ -3,14 +3,14 @@ import * as PropTypes from "prop-types"
 import ServerControl from "./ServerControl"
 import AppControl from "./AppControl"
 import { connect } from "react-redux"
-import { addServer, removeServer } from "../actions"
+import { addServer, removeServer, addApp, removeApp } from "../actions"
 
 const Navigation = ({ apps, modifier }) => (
   <nav className={`navigation navigation--${modifier}`}>
     <ServerControl addServer={addServer} removeServer={removeServer} />
     <div className="navigation__app-control">
       <strong className="navigation__title">Available Apps</strong>
-      <AppControl items={apps} />
+      <AppControl items={apps} addApp={addApp} removeApp={removeApp} />
     </div>
   </nav>
 )
