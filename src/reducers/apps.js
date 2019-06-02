@@ -28,19 +28,6 @@ const initialState = [
 
 const apps = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_APP":
-      return [
-        ...state,
-        {
-          id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ]
-    case "REMOVE_APP":
-      return state.map(todo =>
-        todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
-      )
     default:
       return state
   }

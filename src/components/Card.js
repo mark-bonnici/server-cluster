@@ -1,8 +1,8 @@
 import React from "react"
 import * as PropTypes from "prop-types"
 
-const Card = ({ initials, appName, color, timeAdded, onClick }) => (
-  <div className={`card card--${color}`} onClick={onClick}>
+const Card = ({ initials, appName, color, timeAdded }) => (
+  <div className={`card card--${color}`}>
     <div className="card__info">
       <h3 className="card__title">{initials}</h3>
       <p className="card__name">
@@ -14,11 +14,10 @@ const Card = ({ initials, appName, color, timeAdded, onClick }) => (
 )
 
 Card.propTypes = {
-  onClick: PropTypes.func.isRequired,
   initials: PropTypes.string,
   appName: PropTypes.string,
   color: PropTypes.string,
-  timeAdded: PropTypes.string
+  timeAdded: PropTypes.any
 }
 
 Card.defaultProps = {
