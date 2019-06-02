@@ -22,6 +22,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  &--blue {
+    background: $blueGradient;
+  }
+  &--pink {
+    background: $pinkGradient;
+  }
+  &--purple {
+    background: $purpleGradient;
+  }
+  &--green {
+    background: $greenGradient;
+  }
+  &--cyan {
+    background: $cyanGradient;
+  }
+
+  &--pink,
+  &--blue,
+  &--green,
+  &--purple,
+  &--cyan {
+    border: 0px solid;
+  }
 
   &--add {
     &:before {

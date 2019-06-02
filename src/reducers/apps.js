@@ -2,7 +2,7 @@ const initialState = [
   {
     initials: "Hd",
     appName: "Hadoop",
-    color: "magenta"
+    color: "pink"
   },
   {
     initials: "Ch",
@@ -12,17 +12,17 @@ const initialState = [
   {
     initials: "Sp",
     appName: "Spark",
-    color: "Green"
+    color: "green"
   },
   {
     initials: "St",
     appName: "Storm",
-    color: "Cyan"
+    color: "cyan"
   },
   {
     initials: "Rl",
     appName: "Rails",
-    color: "Purple"
+    color: "purple"
   }
 ]
 

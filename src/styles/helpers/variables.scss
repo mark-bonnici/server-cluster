@@ -1,7 +1,5 @@
 $white: #ffffff;
 $black: #000;
-$outrageousOrange: #fd5c3c;
-$redRobin: #7a3222;
 $gallery: #ececec;
 $alabaster: #f7f7f7;
 $mineShaft: #1c1c1c;
@@ -33,6 +31,37 @@ $blueGradient: linear-gradient(
   rgba(9, 75, 121, 1) 100%
 );
 
+$purpleBorderGradient: linear-gradient(
+    to top,
+    rgba(217, 121, 139, 1),
+    rgba(111, 56, 122, 1)
+  )
+  1 100%;
+$greenBorderGradient: linear-gradient(
+    to top,
+    rgba(178, 235, 107, 1),
+    rgba(97, 157, 83, 1)
+  )
+  1 100%;
+$cyanBorderGradient: linear-gradient(
+    to top,
+    rgba(160, 219, 199, 1),
+    rgba(34, 187, 178, 1)
+  )
+  1 100%;
+$pinkBorderGradient: linear-gradient(
+    to top,
+    rgba(227, 49, 217, 1),
+    rgba(187, 34, 91, 1)
+  )
+  1 100%;
+$blueBorderGradient: linear-gradient(
+    to top,
+    rgba(0, 212, 255, 1),
+    rgba(9, 75, 121, 1)
+  )
+  1 100%;
+
 $textColor: $alabaster;
 $titleColor: $white;
 
@@ -41,9 +70,9 @@ $serverControlButtonColor: $alabaster;
 
 $buttonColor: $alabaster;
 $navTitleColor: $white;
-$navTextColor: $outrageousOrange;
+$navTextColor: $alabaster;
 $navItemBackgroundColor: $coal;
-$navItemBorderColor: $outrageousOrange;
+$navItemBorderColor: $mineShaft;
 
 $MenuColor: $alabaster;
 $MenuBackgroundColor: $mineShaft;
