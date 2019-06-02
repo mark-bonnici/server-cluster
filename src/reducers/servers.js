@@ -46,15 +46,11 @@ const servers = (state = initialState, action) => {
       return [
         ...state,
         {
-          id: action.id,
-          text: action.text,
-          completed: false
+          id: action.id
         }
       ]
     case "REMOVE_SERVER":
-      return state.map(todo =>
-        todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
-      )
+      return [...state.filter((_, i) => i !== state.length - 1)]
     default:
       return state
   }

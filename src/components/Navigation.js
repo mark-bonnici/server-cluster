@@ -3,21 +3,23 @@ import * as PropTypes from "prop-types"
 import ServerControl from "./ServerControl"
 import AppControl from "./AppControl"
 import { connect } from "react-redux"
+import { addServer, removeServer } from "../actions"
 
 const Navigation = ({ apps, modifier }) => (
   <nav className={`navigation navigation--${modifier}`}>
-    <ServerControl />
+    <ServerControl addServer={addServer} removeServer={removeServer} />
     <div className="navigation__app-control">
       <strong className="navigation__title">Available Apps</strong>
       <AppControl items={apps} />
     </div>
   </nav>
 )
-const mapStateToProps = ({ apps }) => ({
-  apps: apps
+const mapStateToProps = state => ({
+  servers: state.servers,
+  apps: state.apps
 })
 
-const mapDispatchToProps = () => ({})
+const mapDispatchToProps = dispatch => ({})
 
 Navigation.propTypes = {
   list: PropTypes.arrayOf(PropTypes.any).isRequired,

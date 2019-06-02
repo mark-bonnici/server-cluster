@@ -1,17 +1,21 @@
 import React from "react"
 import * as PropTypes from "prop-types"
 
-const Button = ({ type, modifier }) => (
+const Button = ({ type, modifier, action }) => (
   <>
     <div>
-      <button className={`round-button ${modifier} round-button--${type}`} />
+      <button
+        className={`round-button ${modifier} round-button--${type}`}
+        onClick={action}
+      />
     </div>
   </>
 )
 
 Button.propTypes = {
   type: PropTypes.string,
-  modifier: PropTypes.string
+  modifier: PropTypes.string,
+  action: PropTypes.func.isRequired
 }
 
 Button.defaultProps = {

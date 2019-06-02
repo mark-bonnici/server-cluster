@@ -1,8 +1,13 @@
-let nextServerId = 0
-export const addServer = text => ({
+let serverIdCounter = 16
+
+export const addServer = () => ({
   type: "ADD_SERVER",
-  id: nextServerId++,
-  text
+  id: serverIdCounter++
+})
+
+export const removeServer = () => ({
+  type: "REMOVE_SERVER",
+  id: serverIdCounter--
 })
 
 export const AvailableApps = {
