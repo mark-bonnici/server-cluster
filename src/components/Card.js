@@ -1,5 +1,6 @@
 import React from "react"
 import * as PropTypes from "prop-types"
+import { distanceInWords } from "date-fns"
 
 const Card = ({ initials, appName, color, timeAdded }) => (
   <div className={`card card--${color}`}>
@@ -8,7 +9,9 @@ const Card = ({ initials, appName, color, timeAdded }) => (
       <p className="card__name">
         <strong>{appName}</strong>
       </p>
-      <p className="card__date">{timeAdded}</p>
+      {timeAdded && (
+        <p className="card__date">{distanceInWords(timeAdded, new Date())}</p>
+      )}
     </div>
   </div>
 )

@@ -1,4 +1,4 @@
-let serverIdCounter = 16
+let serverIdCounter = 5
 
 export const addServer = () => ({
   type: "ADD_SERVER",
